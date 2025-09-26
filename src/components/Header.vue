@@ -48,9 +48,9 @@ const components: { title: string; href: string; description: string }[] = [
 </script>
 
 <template>
-  <header class="w-full">
-    <div class="w-11/12 mx-auto flex items-center justify-between h-14">
-      <div>Logo</div>
+  <header class="w-full border-b border-black">
+    <div class="w-11/12 mx-auto flex items-center justify-between h-16">
+      <div><RouterLink to="/">Home</RouterLink></div>
       <div class="flex gap-2">
         <NavigationMenu>
           <NavigationMenuList>
@@ -138,7 +138,7 @@ const components: { title: string; href: string; description: string }[] = [
               </NavigationMenuContent>
             </NavigationMenuItem>
             <NavigationMenuItem>
-              <NavigationMenuLink href="/docs/introduction" class="font-medium">
+              <NavigationMenuLink href="/docs/introduction" class="font-light">
                 Documentation
               </NavigationMenuLink>
             </NavigationMenuItem>
@@ -146,8 +146,12 @@ const components: { title: string; href: string; description: string }[] = [
         </NavigationMenu>
       </div>
       <div class="flex gap-2">
-        <Button>Sign up</Button>
-        <Button>Sign in</Button>
+        <Button>
+          <RouterLink to="/sign-in">Sign in</RouterLink>
+        </Button>
+        <Button>
+          <RouterLink to="/sign-up">Sign up</RouterLink>
+        </Button>
       </div>
     </div>
   </header>

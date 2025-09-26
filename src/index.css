@@ -1,54 +1,70 @@
-@import "tailwindcss";
-@import "tw-animate-css";
+@import 'tailwindcss';
+@import 'tw-animate-css';
 
 @custom-variant dark (&:is(.dark *));
 
 @font-face {
-  font-family: 'LoewNext';
-  src: url('./assets/fonts/LoewNext-Thin.ttf') format('truetype');
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-Thin.otf') format('opentype');
   font-weight: 100;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'LoewNext';
-  src: url('./assets/fonts/LoewNext-Light.ttf') format('truetype');
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-ExtraLight.otf') format('opentype');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'LoewNext';
-  src: url('./assets/fonts/LoewNext-Regular.ttf') format('truetype');
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'LoewNext';
-  src: url('./assets/fonts/LoewNext-Medium.ttf') format('truetype');
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-Medium.otf') format('opentype');
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 
 @font-face {
-  font-family: 'LoewNext';
-  src: url('./assets/fonts/LoewNext-Bold.ttf') format('truetype');
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-SemiBold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'BRSegma';
+  src: url('./assets/fonts/BRSegma-Bold.otf') format('opentype');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 @theme {
-  --font-loewnext: 'LoewNext', sans-serif;
+  --font-brsegma: 'BRSegma', sans-serif;
 }
 
 :root {
-  --font-loewnext: 'LoewNext', sans-serif;
+  --font-brsegma: 'BRSegma', sans-serif;
 }
 
 @theme inline {
@@ -167,6 +183,6 @@
   }
   body {
     @apply bg-background text-foreground;
-    font-family: 'LoewNext', sans-serif;
+    font-family: 'BRSegma', sans-serif;
   }
 }
